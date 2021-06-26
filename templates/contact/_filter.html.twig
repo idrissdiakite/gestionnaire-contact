@@ -1,0 +1,12 @@
+{{ form_start(form) }}
+
+{{ form_row(form.q) }}
+
+<h6 class="mt-4 mb-2">Choisir une ou plusieurs catégories</h6>
+<div>
+	{{ form_row(form.categories) }}
+</div>
+
+<button type="submit" class="btn btn-outline-dark w-100 mt-3">Filtrer</button>
+
+{{ form_end(form) }}

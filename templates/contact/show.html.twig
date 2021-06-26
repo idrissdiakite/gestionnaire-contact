@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h1 class="ml-5 mt-5">Contact</h1>
+
+	<div class="card ml-5 mt-5 text-center" style="width: 20rem;">
+		<div class="card-body">
+			<h1 class="card-title mb-3">{{ contact.firstname }}
+				{{ contact.lastname }}</h1>
+			<h6 class="card-subtitle text-muted">{{ contact.email }}</h6>
+				<p class="card-text mt-5">Catégorie:
+					</p>
+			<p class="card-text">Priorité:
+				</p>
+		</div>
+	</div>
+
+	<div class="ml-5 mt-5">
+		<a class="ml-5" href="{{ path('main') }}">Retour à la page d'accueil</a>
+	</div>
+
+{% endblock %}

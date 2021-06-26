@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte
+{% endblock %}
+
+{% block body %}
+
+	<div class="row mt-5">
+		<div class="col">
+			<h3 class="mb-5">Mon compte</h3>
+			<p>Email:
+				{{ user.email }}</p>
+			<p>Rôle:
+				{% if 'ROLE_ADMIN' in user.roles %}
+					Administrateur
+				{% elseif 'ROLE_USER' in user.roles %}
+					Utilisateur
+				{% else %}
+					Ce User n'a pas de rôle
+				{% endif %}
+			</p>
+			<a class="mt-5" href="{{ path('main') }}">Retour à la page d'accueil</a>
+		</div>
+
+	{% endblock %}

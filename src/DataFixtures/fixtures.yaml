@@ -1,0 +1,12 @@
+App\Entity\Contact:
+  contact_{1..10}:
+    firstname: "<firstName()>"
+    lastname: "<lastName()>"
+    email: "<email()>"
+    phoneNumber: "<phoneNumber()>"
+    city: "<city()>"
+
+App\Entity\Category:
+  category_{1..10}:
+    name: "<randomElement(['Fammile', 'Ami(e)', 'Connaissance', 'Autre'])>"
+    contact: "@contact_*"
