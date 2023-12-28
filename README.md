@@ -6,4 +6,4 @@ Application de gestion de contacts réalisée avec Symfony (pour mon compte pers
 
 ## 💫 Demo
 
-Vidéo de démonstration de la v1 du site disponible [ici](https://drive.google.com/file/d/1ymH6R5VlYV9ljWj2izUu6CHX-Pce1aku).
+Vidéo de démonstration disponible [ici]([https://youtu.be/B_eBvb3zPhM?si=EotE09qNDeIKtC21).
